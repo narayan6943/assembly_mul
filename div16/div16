@@ -1,0 +1,11 @@
+section .text
+global _start
+ 
+ _start:
+ 	mov ax, 7500
+ 	mov bx, 25
+ 	div bx
+ 	
+ 	mov ebx, 1
+ 	xor ebx, ebx
+ 	int 80h
